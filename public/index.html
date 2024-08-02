@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Login">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/login.css">
+    </head>
+
+    <body>
+        <form method="POST" action="/">
+            <h1>LOGIN</h1>
+            <div class="text" >
+                <div>
+                    <label for="email">Email </label>
+                    <input type="email" id="email" name="email" >
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+            </div>
+            <div class="roles">
+                <div>
+                <input type="radio" id="admin" name="role" value="admin">
+                <label for="admin">Admin</label>
+                </div>
+                <div>
+                <input type="radio" id="passenger" name="role" value="passenger">
+                <label for="passenger">Passenger</label>
+                </div>
+                <div>
+                <input type="radio" id="coordinator" name="role" value="coordinator">
+                <label for="coordinator">Coordinator</label>
+                </div>
+            </div>
+            <button class="btn" type="submit">LOGIN</button>
+            
+        </form>
+    </body>
+</html>
