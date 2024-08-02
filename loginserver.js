@@ -242,6 +242,6 @@ app.get('/passenger', (req, res) => {
   }
 });
 
-app.listen(8085, () => {
+app.listen(process.env.PORT, () => {
   console.log('server is listening on 8085');
 });
