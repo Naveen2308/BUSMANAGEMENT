@@ -68,9 +68,9 @@ app.get('/coordinator', (req, res) => {
   const role = req.session.role;
 
   if (user && role === 'coordinator') {
-    res.sendFile(path.join(__dirname, '/coordinatorhome.html'));
+    res.sendFile(path.join(__dirname, 'public/coordinatorhome.html'));
   } else {
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join(__dirname, 'public/index.html'));
   }
 });
 
@@ -242,6 +242,6 @@ app.get('/passenger', (req, res) => {
   }
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(8085, () => {
   console.log('server is listening on 8085');
 });
